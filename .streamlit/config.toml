@@ -1,0 +1,63 @@
+# MedExplain theme – calm clinical teal, light + dark (users can switch in Settings).
+[theme]
+font = "'Inter':https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFont = "'Inter':https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap"
+baseFontSize = 15
+baseRadius = "10px"
+buttonRadius = "8px"
+headingFontSizes = ["32px", "24px", "19px", "16px", "14px", "13px"]
+headingFontWeights = [700, 650, 600, 600, 600, 600]
+metricValueFontSize = "2rem"
+metricValueFontWeight = 700
+showSidebarBorder = true
+linkUnderline = false
+paddingTop = "2rem"
+
+[theme.light]
+primaryColor = "#0F766E"
+linkColor = "#0F766E"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F7F8"
+textColor = "#0F1E2B"
+borderColor = "#DCE5E8"
+grayColor = "#5B6B78"
+greenColor = "#15803D"
+redColor = "#DC2626"
+orangeColor = "#D97706"
+blueColor = "#0369A1"
+dataframeHeaderBackgroundColor = "#EAF3F3"
+dataframeBorderColor = "#DCE5E8"
+chartCategoricalColors = ["#0F766E", "#0369A1", "#D97706", "#DC2626", "#7C3AED", "#15803D"]
+
+[theme.light.sidebar]
+backgroundColor = "#F3F7F8"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#0F1E2B"
+borderColor = "#DCE5E8"
+primaryColor = "#0F766E"
+linkColor = "#0F766E"
+
+[theme.dark]
+primaryColor = "#0D9488"
+linkColor = "#5EEAD4"
+backgroundColor = "#0B1418"
+secondaryBackgroundColor = "#13222A"
+textColor = "#E6EEF1"
+borderColor = "#22343D"
+grayColor = "#94A3AE"
+greenColor = "#4ADE80"
+redColor = "#F87171"
+orangeColor = "#FBBF24"
+blueColor = "#38BDF8"
+dataframeHeaderBackgroundColor = "#13222A"
+dataframeHeaderTextColor = "#E6EEF1"
+dataframeBorderColor = "#22343D"
+chartCategoricalColors = ["#2DD4BF", "#38BDF8", "#FBBF24", "#F87171", "#A78BFA", "#4ADE80"]
+
+[theme.dark.sidebar]
+backgroundColor = "#081013"
+secondaryBackgroundColor = "#13222A"
+textColor = "#E6EEF1"
+borderColor = "#22343D"
+primaryColor = "#0D9488"
+linkColor = "#5EEAD4"

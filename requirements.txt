@@ -1,0 +1,13 @@
+openai>=1.50
+httpx
+streamlit>=1.40
+pandas
+plotly
+pdfplumber
+pillow
+python-dotenv
+gTTS
+reportlab
+fpdf2>=2.8
+uharfbuzz
+pytest
