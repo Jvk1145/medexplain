@@ -21,7 +21,21 @@ import httpx
 import openai
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv()  # local runs: keys come from the .env file
+
+
+def _load_streamlit_secrets():
+    """Online (Streamlit Cloud): keys come from the app's Secrets settings."""
+    try:
+        import streamlit as st
+        for k, v in st.secrets.items():
+            if isinstance(v, (str, int, float)):
+                os.environ.setdefault(k, str(v))
+    except Exception:  # noqa: BLE001 – no secrets file (normal for local runs)
+        pass
+
+
+_load_streamlit_secrets()
 
 FAST_TIMEOUT = float(os.getenv("AI_TIMEOUT", "7"))   # seconds to wait before switching key
 LAST_CHANCE_TIMEOUT = 45.0                           # final round if everything was slow
