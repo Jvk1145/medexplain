@@ -8,3 +8,8 @@ venv/
 *.log
 .vscode/
 .claude/
+
+# Never commit files holding API keys
+*api*.txt
+*key*.txt
+*secret*
